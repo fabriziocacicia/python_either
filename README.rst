@@ -52,10 +52,10 @@ Install EitherPy using pip:
 
 .. code-block:: sh
 
-    pip install eitherpy
+    pip install git+https://github.com/fabriziocacicia/python_either.git@{version}
 
 Usage
------
+_____
 
 Creating an Either Instance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,12 +95,12 @@ Using Fold
     result.fold(handle_failure, handle_success)
 
 Contributing
-------------
+____________
 
 Contributions are welcome! Feel free to open an issue or submit a pull request on GitHub.
 
 License
--------
+~~~~~~~
 
 This project is licensed under the MIT License.
 
