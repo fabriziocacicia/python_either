@@ -2,6 +2,10 @@
 Changelog
 =========
 
+Version 0.1.1
+===========
+- Fixed equality between :code:`Either`s
+
 Version 0.1
 ===========
 
