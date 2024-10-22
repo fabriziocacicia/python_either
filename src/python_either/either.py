@@ -84,6 +84,20 @@ class Either(Generic[F, S]):
         else:
             return on_success(self.value)
 
+    def __eq__(self, other: Any) -> bool:
+        """
+        Checks equality between this Either instance and another.
+
+        Args:
+            other (Any): The object to compare with this instance.
+
+        Returns:
+            bool: True if the objects are considered equal, False otherwise.
+        """
+        if isinstance(other, Either):
+            return self.value == other.value and self._is_success == other._is_success
+        return False
+
 
 # Helper functions for creating Either instances
 def Failure(value: F) -> Either[F, S]:
